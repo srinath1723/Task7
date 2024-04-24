@@ -65,6 +65,7 @@
        * In script.js added all the data from [restcountries](https://restcountries.com/v3.1/all) and displayed all countries who uses US dollars as currency
     
        * The code is in the [currency](./Currency/js/script.js) folder
+    
     **Discription**
    
        * The filter method is used to iterate over each country object in the countriesData array.
