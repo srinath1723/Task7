@@ -3,9 +3,8 @@ const API_URL="https://restcountries.com/v3.1/all";
 function reqListener() {
     const countriesData=JSON.parse(this.responseText);
     
-   
-   const ans=countriesData.filter(country=>country.region=="Asia"
-    );
+  
+   const ans=countriesData.filter(country=>country.region=="Asia" && country.continents == "Asia");
    for (let i in ans) {
     console.log(`Countryname: ${ans[i].name.common} , region:${ans[i].region}`);
   }
